@@ -17,6 +17,8 @@ class App extends React.Component{
           <p>Rocks: { this.props.reduxState }</p>
         </header>
         <RockPicker />
+        <RockPicker />
+        <RockPicker />
       </div>
     ); // end return
   } //end render
