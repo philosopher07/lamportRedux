@@ -15,10 +15,14 @@ class App extends React.Component{
       <div className="App">
         <header className="App-header">
           <h2>App.js</h2>
-          <p>Clicks: { this.props.reduxState }</p>
+          <p>Rocks: { this.props.reduxState }</p>
         </header>
         
-        <RockPicker />
+        <RockPicker dispatch ={this.props.dispatch} />
+        <RockPicker dispatch ={this.props.dispatch} />
+        <RockPicker dispatch ={this.props.dispatch} />
+        <RockPicker dispatch ={this.props.dispatch} />
+      
       </div>
     ); // end return
   } //end render

@@ -10,8 +10,14 @@ import { Provider } from 'react-redux';
 const firstReducerInitialState = 0;
 
 const firstReducer = ( state = firstReducerInitialState, action ) =>{
-  console.log( 'in firstReducer:', 'state:', state, 'action:', action );
-  
+  console.log( 'in firstReducer:', 'state:', state, 'action:', action.payload );
+  if(action.type === 'pickup'){
+    console.log('pickup', action.payload);
+    return state + action.payload;
+  } else if (action.type === 'drop') {
+    console.log('drop', action.payload);
+    return state - action.payload;
+  }
   return state;
 } // firstReducer
 
