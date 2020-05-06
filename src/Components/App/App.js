@@ -1,23 +1,9 @@
 import React from 'react';
 import './App.css';
 import { connect } from 'react-redux';
+import RockPicker from '../RockPicker/RockPicker';
 
 class App extends React.Component{
-
-  clickHandler = () =>{
-    console.log( 'in clickHandler' );
-    this.props.dispatch( { type: 'click', asdf: 'thingy' } );
-  } // end clickHandler
-
-  unclickHandler = () =>{
-    console.log( 'in unclickHandler' );
-    this.props.dispatch( { type: 'unclick' } );
-  } // end clickHandler
-
-  tacoClickHandler = () =>{
-    console.log( 'in unclickHandler' );
-    this.props.dispatch( { type: 'taco' } );
-  } // end clickHandler
 
   componentDidMount(){
     console.log( 'in componentDidMount, props:', this.props );
@@ -31,7 +17,8 @@ class App extends React.Component{
           <h2>App.js</h2>
           <p>Clicks: { this.props.reduxState }</p>
         </header>
-        <button onClick={ this.clickHandler }>Click Me</button><button onClick={ this.unclickHandler }>Unclick Me</button><button onClick={ this.tacoClickHandler }>I'm Hungry</button>
+        
+        <RockPicker />
       </div>
     ); // end return
   } //end render

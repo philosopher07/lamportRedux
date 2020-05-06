@@ -11,15 +11,7 @@ const firstReducerInitialState = 0;
 
 const firstReducer = ( state = firstReducerInitialState, action ) =>{
   console.log( 'in firstReducer:', 'state:', state, 'action:', action );
-  if( action.type === 'click' ){
-    return state + 1;
-  }
-  else if( action.type === 'unclick' ){
-    return state - 1;
-  }
-  else if( action.type === 'taco' ){
-    return state + 10;
-  }
+  
   return state;
 } // firstReducer
 
