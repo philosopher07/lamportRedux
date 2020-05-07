@@ -18,10 +18,10 @@ class App extends React.Component{
           <p>Rocks: { this.props.reduxState }</p>
         </header>
         
-        <RockPicker dispatch ={this.props.dispatch} />
-        <RockPicker dispatch ={this.props.dispatch} />
-        <RockPicker dispatch ={this.props.dispatch} />
-        <RockPicker dispatch ={this.props.dispatch} />
+        <h2>Chinmaya Rock Picker</h2><RockPicker dispatch ={this.props.dispatch} />
+        <h2>Halima Rock Picker</h2><RockPicker dispatch ={this.props.dispatch} />
+        <h2>Norbu Rock Picker</h2><RockPicker dispatch ={this.props.dispatch} />
+        <h2>Sue Rock Picker</h2><RockPicker dispatch ={this.props.dispatch} />
       
       </div>
     ); // end return
